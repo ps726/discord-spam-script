@@ -1,18 +1,29 @@
 from os import times
 import time
 
+#askes the user what they want to spam
+userinput = (str(input()))
+print("what do you want to spam")
+
+running = (bool(False))
+
+#starts the spamming
+if userinput == "hello":
+    running == True
+    print("spamming starts in 5 seconds")
+else:
+    running == True
+    print("spamming starts in 5 seconds")
+
+#gives you time move you mouse to discord before spamming starts
 time.sleep(5)
 
+#spamming part
 from subprocess import run
 import keyboard
 from pynput.keyboard import *
 
-proggramver = (int(0))
-running = (bool(True))
-
 keyboard = Controller()
-
-keyboard.type("hello world")
 
 def say(word):
     time.sleep(0.5)
@@ -20,5 +31,7 @@ def say(word):
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
 
+#loop to keep spamming
 while running == True:
-    say("when the imposter is sus")
+    say(userinput)
+    
