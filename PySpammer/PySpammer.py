@@ -34,6 +34,17 @@ def say_random():
     while running == True:
         messager = (str(random.randint(1,1000)))
         keyboard.type(messager)
-        time.sleep(1)
+        time.sleep(0.5)
         keyboard.press(Key.enter)
         keyboard.release(Key.enter)
+
+def read_file():
+    f = open('BeeMovie.txt', 'r')
+    time.sleep(5)
+    for word in f:
+        keyboard.type(word)
+        time.sleep(0.75)
+        keyboard.press(Key.enter)
+        keyboard.release(Key.enter)
+
+    
