@@ -39,7 +39,7 @@ def say_random():
         keyboard.release(Key.enter)
 
 def read_file():
-    f = open('BeeMovie.txt', 'r')
+    f = open('OtherThings/BeeMovie.txt', 'r')
     time.sleep(5)
     for word in f:
         keyboard.type(word)
@@ -47,4 +47,20 @@ def read_file():
         keyboard.press(Key.enter)
         keyboard.release(Key.enter)
 
+def read_custom_file():
+    f = open('OtherThings/CustomScript.txt', 'r')
+    time.sleep(5)
+    for word in f:
+        keyboard.type(word)
+        time.sleep(0.75)
+        keyboard.press(Key.enter)
+        keyboard.release(Key.enter)
+
+def mee6_bot_farm():
+    time.sleep(5)
+    while running == True:
+        keyboard.type(str(random.randint(1,1000)))
+        keyboard.press(Key.enter)
+        keyboard.release(Key.enter)
+        time.sleep(30)
     
