@@ -17,8 +17,6 @@ window.geometry("500x650")
 
 window.title('PySpammer')
 
-window.iconbitmap("OtherThings/PythonIcon.ico")
-
 fontStyle = tkFont.Font(size=30)
 
 window.configure(background=bg)
